@@ -213,7 +213,7 @@ export default {
 </script>
 <style>
 .centralize {
-    margin: 150px 180px 0px 180px;
+    margin: 100px 180px 0px 180px;
 }
 .footeR{
     bottom: 0px;
