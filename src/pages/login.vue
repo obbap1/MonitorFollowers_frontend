@@ -154,7 +154,7 @@ export default {
                     })
                     .then(response => {
                         this.snackbar = false;
-                        console.log(response);
+                       
                         this.responseMail = response.data.imapMutation;
                         this.graphReady = true;
                         return this.responseMail
@@ -189,7 +189,7 @@ export default {
                 this.responseMail.data.map(point =>{
                     this.graphPoints.labels.push(this.formatDate(point.date.split('T')[0]))
                     this.graphPoints.datasets[0].data.push(point.numberOfFollowers)
-                    console.log(this.graphPoints)
+                  
                 })
             }
         },
