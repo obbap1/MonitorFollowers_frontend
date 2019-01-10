@@ -63,7 +63,7 @@
             </div>
             <div class="centralize" v-show="graphReady">
                 <h1>Hey <span class="mailStyle" v-if="responseMail">{{responseMail.email}},</span></h1>
-                <div v-if="responseMail && responseMail.data.length > 0" style="margin:50px 0px 60px 0px">
+                <div v-if="responseMail && responseMail.data.length > 0" style="margin:30px 0px 30px 0px">
 
                 </div>
                 <line-chart :chart-data="graphPoints" :options="options" />
