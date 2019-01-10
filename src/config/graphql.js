@@ -5,7 +5,11 @@ export const IMAP_MUTATION = gql `mutation imapMutation($email: String!, $passwo
         email: $email,
         password: $password
     ){
-        data
+        email
+        data{
+            numberOfFollowers
+            date
+        }
     }
 }`
 
