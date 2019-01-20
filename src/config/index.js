@@ -5,7 +5,7 @@ import {CachePersistor} from 'apollo-cache-persist'
 
 let uri;
 
-process.env.NODE_ENV == 'development' ? uri = "https://localhost:4000" : uri = 'https://medium-followers.herokuapp.com/'
+process.env.NODE_ENV == 'development' ? uri = "http://localhost:4000" : uri = 'https://medium-followers.herokuapp.com/'
 
 const httpLink = new HttpLink({
     uri:uri

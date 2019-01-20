@@ -63,9 +63,7 @@
             </div>
             <div class="centralize" v-show="graphReady">
                 <h1>Hey <span class="mailStyle" v-if="responseMail">{{responseMail.email}},</span></h1>
-                <div v-if="responseMail && responseMail.data.length > 0" style="margin:30px 0px 30px 0px">
-
-                </div>
+               
                 <line-chart :chart-data="graphPoints" :options="options" />
             </div>
     <v-snackbar
@@ -224,4 +222,10 @@ export default {
     color: red;
     font-style: italic;
 }
+@media (max-width: 700px){
+    .centralize{
+        margin: 100px 0px 0px 15px;
+    }
+}
+
 </style>
